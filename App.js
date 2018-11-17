@@ -3,6 +3,13 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from 'react-navigation';
 
+// Imports: Screens
+import Explore from './screens/Explore';
+import Inbox from './screens/Inbox';
+import Profile from './screens/Profile';
+import Saved from './screens/Saved';
+import Trips from './screens/Trips';
+
 // React Native: App
 export default class App extends React.Component {
   render() {
