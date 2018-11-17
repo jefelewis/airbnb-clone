@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 
 // React Native: Inbox
 export default class Inbox extends React.Component {

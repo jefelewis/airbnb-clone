@@ -1,13 +1,13 @@
 // Imports: Dependencies
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 
 // React Native: Trips
 export default class Trips extends React.Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <Text style={styles.text}>Tripe</Text>
+        <Text style={styles.text}>Trips</Text>
       </SafeAreaView>
     );
   }

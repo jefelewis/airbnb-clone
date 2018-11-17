@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 
 // React Native: Profile
 export default class Profile extends React.Component {
