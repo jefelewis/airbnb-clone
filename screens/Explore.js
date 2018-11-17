@@ -1,14 +1,14 @@
 // Imports: Dependencies
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 
 // React Native: Explore
 export default class Explore extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Explore</Text>
-      </View>
+      <SafeAreaView style={styles.container}>
+        <Text style={styles.text}>Explore</Text>
+      </SafeAreaView>
     );
   }
 }
@@ -17,5 +17,10 @@ export default class Explore extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center', 
+    alignItems: 'center',
   },
+  text: {
+    fontSize: 18,
+  }
 });

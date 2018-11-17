@@ -6,9 +6,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default class Saved extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Saved</Text>
-      </View>
+      <SafeAreaView style={styles.container}>
+        <Text style={styles.text}>Saved</Text>
+      </SafeAreaView>
     );
   }
 }
@@ -17,5 +17,10 @@ export default class Saved extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center', 
+    alignItems: 'center',
   },
+  text: {
+    fontSize: 18,
+  }
 });

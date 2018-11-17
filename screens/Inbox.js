@@ -6,9 +6,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default class Inbox extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Inbox</Text>
-      </View>
+      <SafeAreaView style={styles.container}>
+        <Text style={styles.text}>Inbox</Text>
+      </SafeAreaView>
     );
   }
 }
@@ -17,5 +17,10 @@ export default class Inbox extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center', 
+    alignItems: 'center',
   },
+  text: {
+    fontSize: 18,
+  }
 });
