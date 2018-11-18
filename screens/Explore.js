@@ -1,10 +1,28 @@
 // Imports: Dependencies
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, TextInput } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, TextInput, Platform, StatusBar } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 // React Native: Explore
 export default class Explore extends React.Component {
+  constructor(props) {
+    super();
+
+    this.state = {
+
+    }
+  }
+  
+  componentWillMount() {
+    // Start Header Height
+    this.startHeaderHeight = 80;
+  
+    // Check Operating System
+    if (Platform.OS === 'android') {
+      this.startHeaderHeight = 100 + StatusBar.currentHeight;
+    }
+  }
+
   render() {
     return (
       <SafeAreaView style={styles.safeArea}>
@@ -51,6 +69,7 @@ const styles = StyleSheet.create({
     shadowColor: 'black',
     shadowOpacity: 0.2,
     elevation: 1,
+    marginTop: Platform.OS === 'android' ? 30 : null,
   },
   headerIcon: {
     marginRight: 15,
