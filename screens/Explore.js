@@ -47,6 +47,10 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: 'white',
     marginHorizontal: 20,
+    shadowOffset: { width: 0, height: 0 },
+    shadowColor: 'black',
+    shadowOpacity: 0.2,
+    elevation: 1,
   },
   headerIcon: {
     marginRight: 15,
