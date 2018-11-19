@@ -3,9 +3,9 @@ import React from 'react';
 import { StyleSheet, View, Text, Image, Dimensions } from 'react-native';
 
 // Screen Dimensions
-const { height, width } = Dimensions.get('window')
+const { height, width } = Dimensions.get('window');
 
-// Component: Category
+// Component: Featured Category
 export default class Category extends React.Component {
   render() {
     return (
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   subtitle: {
-    // fontSize: 24,
+    fontSize: 14,
     fontWeight: '100',
     marginTop: 10,
   },
