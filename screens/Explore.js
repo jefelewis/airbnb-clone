@@ -1,10 +1,11 @@
 // Imports: Dependencies
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, TextInput, Platform, StatusBar } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { SafeAreaView, StyleSheet, ScrollView, Text, View } from 'react-native';
 
 // Imports: Components
 import SearchBar from '../components/SearchBar';
+import HorizontalScroll from '../components/HorizontalScroll';
+import FeaturedCategory from '../components/FeaturedCategory';
 
 // React Native: Explore
 export default class Explore extends React.Component {
@@ -19,7 +20,17 @@ export default class Explore extends React.Component {
   render() {
     return (
       <SafeAreaView style={styles.safeArea}>
-        <SearchBar />
+        <View style={styles.fuck}>
+          <SearchBar />
+
+          <ScrollView scrollEventThrottle={16}>
+            <View style={styles.verticalScrollContainer}>
+              <Text style={styles.text}>What can we help you find, Jeff?</Text>
+              <HorizontalScroll />
+              <FeaturedCategory />
+            </View>
+          </ScrollView>
+        </View> 
       </SafeAreaView>
     );
   }
@@ -29,5 +40,19 @@ export default class Explore extends React.Component {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
+  },
+  fuck: {
+    flex: 1,
+  },
+  text: {
+    flex: 1,
+    fontSize: 24,
+    fontWeight: '700',
+    paddingHorizontal: 20,
+  },
+  verticalScrollContainer: {
+    flex: 1,
+    backgroundColor: 'white',
+    paddingTop: 20,
   },
 });
