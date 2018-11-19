@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-// React Native: Category
+// Component: Category
 export default class Category extends React.Component {
   render() {
     return (
