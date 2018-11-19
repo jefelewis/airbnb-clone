@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, View, TextInput, Platform, StatusBar } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-// React Native: SearchBar
+// Component: Search Bar
 export default class SearchBar extends React.Component {
   constructor(props) {
     super();
@@ -30,7 +30,7 @@ export default class SearchBar extends React.Component {
           <View style={styles.headerContent}>
             <Icon name="ios-search" size={20} style={styles.headerIcon} />
             <TextInput
-              placeholder="Search California"
+              placeholder="Search"
               placeholderTextColor="grey"
               style
             />
