@@ -14,6 +14,9 @@ export default class ScrollListDouble extends React.Component {
 
         <View style={styles.list}>
           <ListItemDouble />
+          <ListItemDouble />
+          <ListItemDouble />
+          <ListItemDouble />
         </View>
 
       </View>
@@ -34,5 +37,8 @@ const styles = StyleSheet.create({
   list: {
     marginTop: 20,
     paddingHorizontal: 20,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
   },
 });
