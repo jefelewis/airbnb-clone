@@ -27,8 +27,8 @@ export default class ListItemDouble extends React.Component {
 // Styles
 const styles = StyleSheet.create({
   listItem: {
-    width: width/2,
-    height: width/2,
+    width: width/2 - 30,
+    height: width/2 - 30,
     borderWidth: 0.5,
     borderColor: '#dddddd',
   },
@@ -48,13 +48,13 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
   },
   listingTitle: {
-    fontSize: 14,
-    fontWeight: '700',
+    fontSize: 10,
+    fontWeight: '400',
     color: '#000',
   },
   listingDescription: {
     fontSize: 14,
-    fontWeight: '500',
+    fontWeight: '600',
   },
   listingPrice: {
     fontSize: 12,
