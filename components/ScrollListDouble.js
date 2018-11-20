@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
 // Imports: Components
-import ListItemDouble from './ListItemDouble';
+import ListItemDouble from './ScrollListItemDouble';
 
 // Component: Scroll List Double
 export default class ScrollListDouble extends React.Component {
@@ -13,6 +13,10 @@ export default class ScrollListDouble extends React.Component {
         <Text style={styles.title}>Homes Around The World</Text>
 
         <View style={styles.list}>
+          <ListItemDouble />
+          <ListItemDouble />
+          <ListItemDouble />
+          <ListItemDouble />
           <ListItemDouble />
           <ListItemDouble />
           <ListItemDouble />
