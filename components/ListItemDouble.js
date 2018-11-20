@@ -1,6 +1,7 @@
 // Imports: Dependencies
 import React from 'react';
 import { StyleSheet, View, Text, Image, Dimensions } from 'react-native';
+import StartRating from 'react-native-star-rating';
 
 // Screen Dimensions
 const { height, width } = Dimensions.get('window');
@@ -18,7 +19,15 @@ export default class ListItemDouble extends React.Component {
           <Text style={styles.listingTitle}>Private Room - 2 Beds</Text>
           <Text style={styles.listingDescription}>Nature's Backyard</Text>
           <Text style={styles.listingPrice}>$199 USD</Text>
+
+          <StartRating 
+            disabled={true}
+            maxStars={5}
+            rating={4}
+            starSize={10}
+          />
         </View>
+
       </View>
     );
   }
@@ -48,9 +57,9 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
   },
   listingTitle: {
-    fontSize: 10,
+    fontSize: 12,
     fontWeight: '400',
-    color: '#000',
+    color: '#FD5C63',
   },
   listingDescription: {
     fontSize: 14,
