@@ -1,22 +1,19 @@
 // Imports: Dependencies
 import React from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
 
 // Component: Category
 export default class Category extends React.Component {
   render() {
     return (
-        <View style={styles.container}>
-            <View style={styles.image}>
-                <Image source={this.props.imageUri}
-                    style={{ flex: 1, width: null, height: null, resizeMode: 'cover' }}
-                />
-            </View>
-            <View style={styles.text}>
-                <Text>{this.props.name}</Text>
-            </View>
-        </View>
+      <View style={styles.container}>
+          <View style={styles.imageContainer}>
+            <Image source={this.props.imageUri} style={styles.image}/>
+          </View>
+          <View style={styles.text}>
+              <Text>{this.props.name}</Text>
+          </View>
+      </View>
     );
   }
 }
@@ -30,8 +27,14 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderColor: '#dddddd',
   },
-  image: {
+  imageContainer: {
     flex: 2,
+  },
+  image: {
+    flex: 1,
+    width: null,
+    height: null,
+    resizeMode: 'cover',
   },
   text: {
     flex: 1,
