@@ -62,7 +62,7 @@ export default createBottomTabNavigator({
     }
   },
   Profile: {
-    screen: Inbox,
+    screen: Profile,
     navigationOptions: {
       tabBarLabel: 'Profile',
       tabBarIcon: ({ tintColor }) => (
