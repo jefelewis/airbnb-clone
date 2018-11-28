@@ -65,6 +65,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     elevation: 1,
     marginTop: Platform.OS === 'android' ? 30 : null,
+    overflow: 'hidden',
   },
   headerIcon: {
     marginRight: 15,
